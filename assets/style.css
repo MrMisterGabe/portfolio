@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #de2126;
+    --secondary-color: #808080;
+    --tertiary-color: #FFFFFF;
+}
+
+.hero {
+    background-image: url(../assets/images/herojpg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    background-attachment: fixed;
+    color: var(--primary-color)
+}
