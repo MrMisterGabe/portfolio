@@ -6,14 +6,15 @@
 }
 
 :root {
-    --primary-color: #de2126;
-    --secondary-color: #bbbbbb;
-    --tertiary-color: #FFFFFF;
+    --primary-color: #171717;
+    --secondary-color: #444444;
+    --tertiary-color: #DA0037;
+    --quaternary-color: #EDEDED;
 }
 
 body {
     color: var(--primary-color);
-    background-color: var(--tertiary-color);
+    background-color: var(--quaternary-color);
 }
 
 header {
@@ -29,7 +30,7 @@ header h1 {
     font-weight: bold;
     font-size: 46px;
     background: var(--primary-color);
-    color: var(--tertiary-color);
+    color: #ffff;
     margin: 0;
 }
 
@@ -94,7 +95,11 @@ footer a {
 }
 
 section {
-    padding: 60px;
+    padding: 100px;
+}
+
+section h2 {
+    text-align: left;
 }
 
 div article div a img {
@@ -110,6 +115,18 @@ div article div a img {
     color: var(--secondary-color);
     justify-content: center;
     align-items: flex-start;
+    background-position: center;
+}
+
+.hero img {
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.hero h2 {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    align-content: flex-start;
 }
 
 .headshot {
@@ -120,12 +137,17 @@ div article div a img {
 
 .sectiontitle {
     align-items: center;
+    border: 2px solid var(--tertiary-color);
 }
 
 .project {
     margin: 3.5;
     padding: 20px;
     width: 40%;
+}
+
+.projects img {
+    width: 100%;
 }
 
 .project-name {

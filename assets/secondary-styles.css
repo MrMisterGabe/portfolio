@@ -1,0 +1,20 @@
+html {
+    overflow: auto;
+}
+
+html section, iframe {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    border: none;
+}
+
+iframe {
+    display: block;
+    width: 100vw;
+    height: 100vw;
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+}
