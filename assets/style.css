@@ -41,6 +41,12 @@ header a {
     color: var(--tetiary-color);
 }
 
+header p {
+    background-color: var(--quaternary-color);
+    color:var(--tertiary-color);
+    font-size: 24px;
+    text-align: center;
+}
 header nav {
     margin: 7px 0;
 }
@@ -91,6 +97,7 @@ footer ul {
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
+    color: var(--quaternary-color)
 }
 
 footer ul li img {
@@ -98,7 +105,7 @@ footer ul li img {
 }
 
 footer a {
-    color: var(--primary-color);
+    color: var(--quaternary-color);
 }
 
 section {
@@ -147,10 +154,12 @@ div article div a img {
     width: 150px;
 }
 
-.sectiontitle {
+.section-title {
     align-items: center;
-    border: 2px solid var(--tertiary-color);
     text-align: center;
+    font-size: 30px;
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color)
 }
 
 .section-border {
@@ -181,18 +190,21 @@ div article div a img {
 }
 
 .project-summary img {
-    width: 750px;
+    max-width: 100%;
+    max-height: 100%;
     height: auto;
+    width: 730px;
 }
 
 .project-summary-main img{
-    width: 1500px;
+    max-width: 100%;
     height: auto;
+    width: 2000px;
 }
 
 .flex-row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -203,4 +215,60 @@ div article div a img {
     right: 20px;
     text-align: right;
     font-size: 18px;
+}
+
+@media screen and (max-width:900px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+    
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .project {
+        flex: 0 70%;
+    }
+}
+
+@media screen and (max-width: 735px) {
+    section {
+        padding: 30px 15px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .section-title {
+        width: 95%;
+    }
 }
