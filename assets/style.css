@@ -111,7 +111,7 @@ footer a {
 }
 
 section {
-    padding: 30px;
+    padding: 2px;
 }
 
 section h2 {
@@ -168,7 +168,7 @@ section article section a img {
     margin: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .project {
@@ -176,7 +176,7 @@ section article section a img {
 }
 
 .project-name {
-    display: inline-flex;
+    display: flex;
     background-color: rgba(218, 0, 55, 0.8);
     color: var(--quaternary-color);
     padding: 20px 20px;
@@ -185,17 +185,15 @@ section article section a img {
 }
 
 .project-summary img {
-    max-width: 100%;
-    max-height: 100%;
     height: auto;
-    width: 100vw;
+    width: 49vw;
     align-self: flex-end;
 }
 
 .project-summary-main img{
-    /*max-width: 100%;*/
+    max-width: 100%;
     height: auto;
-    width: 2000px;
+    width: 100%;
     align-self: flex-start;
 }
 
