@@ -84,23 +84,25 @@ footer h2 {
     font-size: 30px;
     margin: 0;
     align-items: center;
+    width: 100%;
 }
 
-footer div {
+footer section {
     line-height: 1.5;
     text-align: right;
+    justify-content: flex-end;
 }
 
-footer ul {
+footer p {
     list-style: none;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
-    color: var(--quaternary-color)
+    color: var(--quaternary-color);
 }
 
-footer ul li img {
+footer p img {
     margin: auto 5px auto 20px;
 }
 
@@ -120,7 +122,7 @@ section p {
     text-align: center;
 }
 
-div article div a img {
+section article section a img {
     border: 4px solid var(--secondary-color);
 } 
 
@@ -159,30 +161,23 @@ div article div a img {
     text-align: center;
     font-size: 30px;
     background-color: var(--tertiary-color);
-    color: var(--quaternary-color)
-}
-
-.section-border {
-    border-bottom: 6px solid var(--tertiary-color);
-    margin: 50px 250px;
+    color: var(--quaternary-color);
 }
 
 .projects {
-    /* width: 100%; */
-    margin: 0 auto;
+    margin: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .project {
-    margin: 3.5;
-    /* flex: 1; */
+    margin: 0;
 }
 
 .project-name {
-    display: block;
-    background-color: var(--tertiary-color);
+    display: inline-flex;
+    background-color: rgba(218, 0, 55, 0.8);
     color: var(--quaternary-color);
     padding: 20px 20px;
     position: relative;
@@ -193,13 +188,15 @@ div article div a img {
     max-width: 100%;
     max-height: 100%;
     height: auto;
-    width: 730px;
+    width: 100vw;
+    align-self: flex-end;
 }
 
 .project-summary-main img{
-    max-width: 100%;
+    /*max-width: 100%;*/
     height: auto;
     width: 2000px;
+    align-self: flex-start;
 }
 
 .flex-row {
@@ -212,9 +209,20 @@ div article div a img {
 .project-text {
     position: relative;
     bottom: 120px;
-    right: 20px;
+    align-self: flex-end;
     text-align: right;
     font-size: 18px;
+    color: var(--primary-color);
+    background-color: rgba(237, 237, 237, 0.8);
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+@media screen and (max-width: 1020px) {
+    .project-text {
+        display: none;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -239,31 +247,19 @@ div article div a img {
         font-size: 20px;
     }
     
-    footer h2, footer div {
+    footer h2, footer section {
         text-align: center;
         width: 100%;
-    }
-
-    .hero-cta, .hero-form {
-        width: 100%;
-    }
-
-    .hero-cta {
-        text-align: center;
-    }
-
-    .section-title {
-        width: 80%;
-    }
-
-    .project {
-        flex: 0 70%;
     }
 }
 
 @media screen and (max-width: 735px) {
     section {
         padding: 30px 15px;
+    }
+
+    .projects {
+        padding: 0px;
     }
 }
 
